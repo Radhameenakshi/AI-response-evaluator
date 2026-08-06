@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Response Evaluator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>🤖 AI Response Evaluator</h1>
+
+    <p>
+        Compare AI-generated responses using structured
+        human evaluation criteria.
+    </p>
+
+</header>
+
+<main>
+
+    <!-- ===========================
+         PROMPT
+    ============================ -->
+
+    <section class="prompt-section">
+
+        <h2>Prompt</h2>
+
+        <textarea
+            id="prompt"
+            placeholder="Enter the original prompt..."
+        ></textarea>
+
+    </section>
+
+    <!-- ===========================
+         RESPONSES
+    ============================ -->
+
+    <section class="responses">
+
+        <div class="response-card">
+
+            <h2>Response A</h2>
+
+            <textarea
+                id="responseA"
+                placeholder="Paste Response A..."
+            ></textarea>
+
+        </div>
+
+        <div class="response-card">
+
+            <h2>Response B</h2>
+
+            <textarea
+                id="responseB"
+                placeholder="Paste Response B..."
+            ></textarea>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+         EVALUATION
+    ============================ -->
+
+    <section class="evaluation">
+
+        <h2>Evaluation Criteria</h2>
+
+        <div id="criteriaContainer">
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+         BUTTONS
+    ============================ -->
+
+    <div class="buttons">
+
+        <button id="evaluateBtn">
+
+            Evaluate Responses
+
+        </button>
+
+        <button id="resetBtn">
+
+            Reset
+
+        </button>
+
+    </div>
+
+    <!-- ===========================
+         RESULT
+    ============================ -->
+
+    <section class="result">
+
+        <h2>Evaluation Summary</h2>
+
+        <div id="resultCard">
+
+            <div class="score">
+
+                <h3>Response A</h3>
+
+                <p id="scoreA">
+
+                    0 / 25
+
+                </p>
+
+            </div>
+
+            <div class="score">
+
+                <h3>Response B</h3>
+
+                <p id="scoreB">
+
+                    0 / 25
+
+                </p>
+
+            </div>
+
+            <div class="winner">
+
+                <h2 id="winner">
+
+                    No evaluation yet.
+
+                </h2>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

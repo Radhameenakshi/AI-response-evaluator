@@ -40,7 +40,7 @@ A responsive web application that allows users to compare two AI-generated respo
 * Add graphical score comparison
 * Support custom evaluation criteria
 * Integrate an AI API for automated response evaluation
-* Add dark mode
+* Adding dark mode
 
 ---
 
